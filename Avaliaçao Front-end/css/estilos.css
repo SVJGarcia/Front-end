@@ -1,0 +1,32 @@
+UL{
+    list-style-type: none;
+    margin-left: 80PX;
+    padding: 0;
+    width: 1300PX;
+    background-color: green;
+}
+IMG{
+    margin-left: 80PX;
+    width: 1000PX;
+    right: 1000PX;
+}
+H1{
+    margin-left: 300PX;
+    font-size: 80PX;
+}
+LI A{
+    display: black;
+    color: white;
+    padding: 8PX  4PX;
+    text-decoration: none;
+    font-size: 50PX;
+}
+P{
+    margin-left: 80PX;
+    font-size: 50PX;
+}
+
+FOOTER{
+    margin-left: 400PX;
+    font-size: 50PX;
+}
