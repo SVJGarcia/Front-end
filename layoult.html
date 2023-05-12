@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <title>Document</title>
+        <style>
+            {
+                padding:0;
+                margin:0;
+            }
+            #main{display: grid;
+                grid-template-areas: "header header" "nav nav" "content aside" "footer footer";
+                grid-template-rows: 15vh 10vh 55vh 10vh;
+
+            }
+
+            .maindheder{grid-arena:header; background: red;}
+            .mainnav{grid-area:nav; background: rgb(0, 68, 255);}
+            .maincontent{grid-area:content; background: rgb(255, 0, 200);}
+            .mainaside{grid-arena:aside; background: rgb(255, 0, 0);}
+            .mainFooter{grid-area:footer; background: blue;}
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <header class="maindheder">Header</header>
+            <nav class="mainnav">Nav</nav>
+            <article class="maincontent">Content</article>
+            <aside class="mainaside">Aside</aside>
+            <footer class="mainFooter">Footer</footer>
+            </main>
+        </body>
+</html>
