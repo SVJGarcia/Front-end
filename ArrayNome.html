@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script>
+        
+        //ArrayNome
+        var arrayNome=["João", "Maria", "Paula", "Pedro",];
+        var resultado=arrayNome.push("Joana");
+        console.log(resultado);
+        arrayNome.push("Silva");
+        arrayNome.push("Garcia");
+        console.log(arrayNome);
+        
+    </script>
+</head>
+<body>
+
+    
+    //COMANDOS JS
+
+
+    //Suponha que você tenha o seguinte array de itens:
+    var arrayItens=["Item 1", "Item 2","Item 3","Item 4","Item 5"];
+    
+    //Vamos criar uma sring HTML para representar uma lista não ordenada <ul>:
+        var listaHtml="<ul>";
+
+    //Agora, vamos percorrer o array e adicionar cada lista HTML:
+    for(var i=0; i<arrayItens.length; i++){
+        ListaHtml+="<li>"+arrayItens[i]+"</li>";
+    }     
+
+    //Fechamos a lista não ordenada </ul>:
+    ListaHtml+=</ul>;
+
+    //Agora, você pode inserir essa string HTML em um elemento HTML na sua página, por exemplo:
+    document.getElementByld("minhaDiv").innerHTML=listaHtml;
+</body>
+</html>
