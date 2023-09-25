@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="lname" name="lname" value=""><br><br>
+        <input type="submit" onclick="validarSenha();">
+      </form> 
+
+        <!--Aqui comessa meu JavaScript-->
+
+        <script>
+            function validarSenha(){
+                alert('ok!');
+                let usuario = 'Pedro2';
+                let bdsenha = '123mudar';
+                let frmusario = document.getElementById.('usuario').value;
+                let frmsenha = document.getElementById.('senha').value;
+
+                if(frmusuario== bdusuario && frmsenha== bdsenha){
+                    alert('Acesso concedido com sucesso!');
+                }else{
+                    alert('Usuario não autorizado')
+                }
+            }
+        </script>
+      
+</body>
+</html>
