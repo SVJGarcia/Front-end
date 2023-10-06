@@ -9,17 +9,18 @@
 
         // Array com as opções
         var opcoes = ["Opção 1-Botafogo", "Opção 2-Bragantino", "Opção 3-Gremio", "Opção 4-Palmeiras", "Opção 5-Flamengo"];
+        var _times="";
 
         // Exibir o menu
         console.log("Escolha uma opção:");
 
         // Usar um loop for para mostrar as opções
         for (var i = 0; i < opcoes.length; i++) {
-        console.log(i + 1 + ". " + opcoes[i]);
+        _times=_times+(i + 1 + ". " + opcoes[i])+'\n';
         }
 
         // Solicitar a escolha do usuário
-        var escolha = prompt("Digite o número da opção desejada (1-5):");
+        var escolha = prompt(_times+"Digite o número da opção desejada (1-5):");
 
         // Converter a escolha para um número inteiro
         var escolhaInt = parseInt(escolha);
