@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // Array com as opções
+        var opcoes = ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"];
+
+        // Exibir o menu
+        console.log("Escolha uma opção:");
+
+        // Usar um loop for para mostrar as opções
+        for (var i = 0; i < opcoes.length; i++) {
+        console.log(i + 1 + ". " + opcoes[i]);
+        }
+
+        // Solicitar a escolha do usuário
+        var escolha = prompt("Digite o número da opção desejada (1-5):");
+
+        // Converter a escolha para um número inteiro
+        var escolhaInt = parseInt(escolha);
+
+        // Verificar se a escolha é válida
+        if (!isNaN(escolhaInt) && escolhaInt >= 1 && escolhaInt <= 5) {
+        // Exibir a opção escolhida pelo usuário
+        alert("Você escolheu: " + opcoes[escolhaInt - 1]);
+        } else {
+        // Tratar escolha inválida
+        alert("Escolha inválida. Por favor, escolha um número de 1 a 5.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
