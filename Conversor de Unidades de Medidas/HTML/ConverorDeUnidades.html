@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <script src="../JS/ola.js"></script>
+    <style>
+
+      h1{
+        text-align: center;
+      }
+
+      form{
+        text-align: center;
+      }
+
+      footer{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+     <h1>Conversor de Unides de Medidas</h1>
+      <form id="formulario">
+        <div class="form-group">
+          <label for="converte">Converter em:</label>
+          <select name="converte" id="converte">
+            <option value="1">Milhas para Km</option>
+            <option value="2">Pés para Metros</option>
+            <option value="3">Libras para Kg</option>
+            <option value="4">Galoes para Litros</option>
+             <option value="4">Dólares para Reais</option>
+          </select>
+          <br>
+          Distância em milhas<input type="text" class="form-control" id="milhas" placeholder="Milhas">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="Km">Distância em Km</label>
+          <input type="text" class="form-control" id="Km" readonly placeholder="Km">
+        </div>
+        <br>
+        <button type="submit" id="calc" class="btn btn-success btn-block" >Converte</button>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>Obrigado por acessar nosso site!</footer>
+  </body>
+</html>

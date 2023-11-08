@@ -1,0 +1,127 @@
+<h1 class="text-center">Conversor de Milhas</h1>
+      <form id="formulario" onclick="converter()">
+        <div class="form-group">
+          <label for="converte">Converter em:</label>
+          <select name="converte" id="converte">
+            <option value="1">Milhas para Km</option>
+            <option value="2">Libras para Kg</option>
+          </select>
+          <br>
+          Distância em milhas<input type="text" class="form-control" id="milhas" placeholder="Milhas">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="Km">Distância em Km</label>
+          <input type="text" class="form-control" id="Km" readonly placeholder="Km">
+        </div>
+        <br>
+        <button type="submit" id="calc" class="btn btn-success btn-block" >Converte</button>
+
+      </form>
+    </div>
+
+           function converteFparaC(F){
+                var celcius = (F - 32) * (5 / 9);
+                return celcius;
+            }
+            document.write(converteFparaC(542));
+
+    //Uma milha equivale à 1604.38 metros.
+       var metros = parseFloat(prompt("Digite a medida em metros"));
+       var m = 1604.38;
+
+       var milha = (metros/m);
+
+       alert(metros+" metros em milhas é: "+ milha);
+
+
+
+
+
+
+
+  // function converteMparaK(M){
+            //var miles = 1;
+           // var K = M * 1.60934
+           // let distance_Quilômetros = 1 * 2
+           // let distance_km = distance_quilometros * 2;
+           // return K;
+       // }
+
+           //toFixed(
+
+
+
+           /*
+            alert(1);
+
+
+            function converte(){
+            var distance_miles = document.getElementById("milhas").value;
+            var tipo = document.getElementById("converte").value;
+           
+            //1 milha é igual a 1,60934 quilômetros
+            let distance_km = distance_miles * 1.60934;
+            document.write.getElementById("resultado").innerHTML ='Quilômetros:'+ distance_km;
+            resultado = km.toFixed(1) + "km";
+            return Quilômetros;
+            if (tipo==1){
+                let distance_km = distance_miles * 1.60934;
+                document.write.getElementById("resultado").innerHTML ='Quilômetros:'+ distance_km;
+            }else if(tipo==2){
+
+            }
+            */
+        //}
+          /*          
+        //conversor de libras para km
+        "use strict";
+
+        Object.defineProperty(exports, "__esModule", {
+        value: true
+        });
+        exports.default = conversor;
+        function conversor(numero, unidad) {
+         var resultado = void 0;
+        if (unidad == "kg" || unidad == "kilos") {
+        return kiloALibra(numero);
+        } else if (unidad == "libra" || unidad == "lb") {
+        return libraAKilo(numero);
+        }
+        function kiloALibra(numero) {
+        let lb = numero * 2.20462;
+        resultado = lb.toFixed(2) + " lb";
+        return resultado;
+        }
+        function libraAKilo(numero) {
+        let kg = numero * 0.453592;
+        resultado = kg.toFixed(2) + " kg";
+        return resultado;
+        }
+        
+        }*/
+
+
+
+       //Uma Milha equivale à 1604.38 Metros.
+       //var milhas = parseFloat(prompt("Digite a medida em Milhas:"));
+       //var pés = parseFloat(prompt("Digite a medida em Pés:"));
+       //var libras = parseFloat(prompt("Digite a massa em Libras:"));
+       //var galões = parseFloat(prompt("Digite o volume em Galões:"));
+
+       //var mi = 1604.38;
+       //var ft = 0.3048;
+       //var lb = 0.45359237;
+       //var gal = 3.785411784;
+
+       //var metros = (milhas*mi) / (1000);
+       //var metros = (pés*ft);
+       //var quilos = (libras*lb);
+       //var litros = (galões*gal);
+
+       //alert(milhas+" Milhas em Quilômetros é: "+ metros);
+       //alert(pés+" Pés em Metros é: "+ metros);
+       //alert(libras+" Libras em Quilôgramas é: "+ quilos);
+      //alert(galoes+" Galões em Litros é: "+ litros);
+
+    
