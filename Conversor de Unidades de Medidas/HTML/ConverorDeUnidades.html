@@ -10,38 +10,38 @@
       h1{
         text-align: center;
       }
-
+      
       form{
         text-align: center;
       }
-
+      
       footer{
         text-align: center;
       }
-    </style>
+      </style>
   </head>
   <body>
      <h1>Conversor de Unides de Medidas</h1>
       <form id="formulario">
         <div class="form-group">
           <label for="converte">Converter em:</label>
-          <select name="converte" id="converte">
+          <select name="converte" id="converte" onchange="buscadado();">
+            <option value="0">Selecione uma Opção</option>
             <option value="1">Milhas para Km</option>
             <option value="2">Pés para Metros</option>
             <option value="3">Libras para Kg</option>
             <option value="4">Galoes para Litros</option>
-             <option value="4">Dólares para Reais</option>
+             <option value="5">Dólares para Reais</option>
           </select>
-          <br>
-          Distância em milhas<input type="text" class="form-control" id="milhas" placeholder="Milhas">
         </div>
-        <br>
+        
         <div class="form-group">
-          <label for="Km">Distância em Km</label>
-          <input type="text" class="form-control" id="Km" readonly placeholder="Km">
+          <label for="valor" id="descricao"></label>
+          
+          <input type="number" class="form-control" id="valor"  placeholder="valor" >
         </div>
-        <br>
-        <button type="submit" id="calc" class="btn btn-success btn-block" >Converte</button>
+        <p id="convertido">Valor Convertido:</p>
+        <button type="button" id="calc" class="btn btn-success btn-block" onclick="blbl();">Converte</button>
       </form>
     </div>
     <br>
