@@ -2,23 +2,23 @@ function buscadado(){
        var escolha=document.getElementById("converte").value;
        if(escolha==1){
               document.getElementById("descricao").textContent = ''
-              document.getElementById("descricao").textContent = 'Digite o valor em milhas:'
+              document.getElementById("descricao").textContent = 'Digite o valor em milhas:';
              
        }else if(escolha==2){
               document.getElementById("descricao").textContent = ''
-              document.getElementById("descricao").textContent = 'Digite o valor em Pés:'
+              document.getElementById("descricao").textContent = 'Digite o valor em Pés:';
              
        }else if(escolha==3){
               document.getElementById("descricao").textContent = ''
-              document.getElementById("descricao").textContent = 'Digite o valor em Libras:'
+              document.getElementById("descricao").textContent = 'Digite o valor em Libras:';
               
        }else if(escolha==4){
               document.getElementById("descricao").textContent = ''
-              document.getElementById("descricao").textContent = 'Digite o valor em Galões:'
+              document.getElementById("descricao").textContent = 'Digite o valor em Galões:';
               
        }else if(escolha==5){
               document.getElementById("descricao").textContent = ''
-              document.getElementById("descricao").textContent = 'Digite o valor em Dólares:'
+              document.getElementById("descricao").textContent = 'Digite o valor em Dólares:';
             
        }else{
               alert('garcia');
@@ -28,25 +28,30 @@ function blbl(){
        var escolha=document.getElementById("converte").value;
        var Ventrada = document.getElementById("valor").value;
        if(escolha==1){
+              //Uma milha equivale à 1604.38 metros.
               var mi = 1604.38;
               var metros = (Ventrada*mi) / (1000);
-              document.getElementById("convertido").textContent =Ventrada+' a medida em Quilômetros é: '+metros;
+              document.getElementById("convertido").textContent = Ventrada+' Milhas em Quilômetros é: '+metros;
        }else if(escolha==2){
+              //Um Pé equivale a 0.3048 Metros.
               var ft = 0.3048;
               var metros = (Ventrada*ft);
-              document.getElementById("convertido").textContent = 'pés '+Ventrada+'Valor em metros'+metros;
+              document.getElementById("convertido").textContent = Ventrada+' Pés em Metros é: '+metros;
        }else if(escolha==3){
+              //Uma Libra equivale a 0.45359237 Quilôgramas.
               var lb = 0.45359237;
               var quilos = (Ventrada*lb);
-              document.getElementById("convertido").textContent = 'libras'+Ventrada+'Valor em quilos'+quilos;
+              document.getElementById("convertido").textContent = Ventrada+' Libras em Quilos é: '+quilos;
        }else if(escolha==4){
+              //Um Galão equivale a 3.785411784 Litros.
               var gal = 3.785411784;
               var litros = (Ventrada*gal);
-              document.getElementById("convertido").textContent = 'galoes'+Ventrada+'Valor em galões'+litros;
+              document.getElementById("convertido").textContent = Ventrada+' Galões em Litros é: '+litros;
        }else if(escolha==5){
+              //Um Dólar equivale a 4.91 Reais.
               var us = 4.92;
               var reais = (Ventrada*us);
-              document.getElementById("descricao").textContent = 'dólares'+Ventrada+'Valor em Dólares'+reais
+              document.getElementById("descricao").textContent = Ventrada+' Dólares em Reais é: '+reais
        }else{
               alert('garcia');
        }
