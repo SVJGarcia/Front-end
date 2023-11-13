@@ -20,10 +20,12 @@ function buscadado(){
               document.getElementById("descricao").textContent = ''
               document.getElementById("descricao").textContent = 'Digite o valor em Dólares:';
             
-       }else{
-              alert('garcia');
-       }
+       }else if(escolha==6){
+              document.getElementById("descricao").textContent = ''
+              document.getElementById("descricao").textContent = 'Digite o valor em Jardas:';
+       } 
 }
+
 function blbl(){
        var escolha=document.getElementById("converte").value;
        var Ventrada = document.getElementById("valor").value;
@@ -48,43 +50,15 @@ function blbl(){
               var litros = (Ventrada*gal);
               document.getElementById("convertido").textContent = Ventrada+' Galões em Litros é: '+litros;
        }else if(escolha==5){
-              //Um Dólar equivale a 4.91 Reais.
-              var us = 4.92;
+              //Um Dólar equivale a 4.94 Reais.
+              var us = 4.94;
               var reais = (Ventrada*us);
-              document.getElementById("descricao").textContent = Ventrada+' Dólares em Reais é: '+reais
-       }else{
-              alert('garcia');
+              document.getElementById("convertido").textContent = Ventrada+' Dólares em Reais é: '+reais;
+       }else if(escolha==6){
+              //Uma Jarda equivale a 0,9144 metros.
+              var yd = 0.9144;
+              var metros = (Ventrada*yd);
+              document.getElementById("convertido").textContent = Ventrada+' Jardas em Metros é: '+metros;
        }
+               
 }
-
-/*
-      //Uma milha equivale à 1604.38 metros.
-       var milhas = parseFloat(prompt("Digite a medida em Milhas:"));
-       var mi = 1604.38;
-       var metros = (milhas*mi) / (1000);
-       alert(milhas+" a medida em Quilômetros é: "+ metros);
-
-       //Um Pé equivale a 0.3048 Metros.
-       var pés = parseFloat(prompt("Digite o comprimento em Pés:"));
-       var ft = 0.3048;
-       var metros = (pés*ft);
-       alert(pés+" O comprimento em Metros é: "+ metros);
-
-       //Uma Libra equivale a 0.45359237 Quilôgramas.
-       var libras = parseFloat(prompt("Digite a massa em Libras:"));
-       var lb = 0.45359237;
-       var quilos = (libras*lb);
-       alert(libras+" A massa em Quilôgramas é: "+ quilos);
-
-       //Um Galão equivale a 3.785411784 Litros.
-       var galões = parseFloat(prompt("Digite o volume em Galões:"));
-       var gal = 3.785411784;
-       var litros = (galões*gal);
-       alert(galões+" O volume em Litros é: "+ litros);
-
-       //Um Dólar equivale a 4.91 Reais.
-       var dólar = parseFloat(prompt("Digite o descricao em Dólares:"));
-       var us = 4.92;
-       var reais = (dólar*us);
-       alert(dólar+" O descricao em Reais é: "+ reais);
-*/
