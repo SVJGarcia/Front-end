@@ -40,7 +40,7 @@ function lerValores(indice) {
                 
                 //Função para ler os valores
                 function lerValores(indice){
-                    rl.question('Digite o ${indice +1}°vcalor inteiro:',(valor) =>{
+                    rl.question('Digite o ${indice +1}° valor inteiro:',(valor) =>{
                         //Converter o valor para inteiro
                         const valorInteiro = parseInt(valor);
                 
