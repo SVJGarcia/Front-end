@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <title>Gerenciador de Biblioteca</title>
+</head>
+<body>
+ <h1>Gerenciador de Biblioteca</h1>
+
+ <form action="/adicionar" method="post">
+ <label for="titulo">Título:</label>
+ <input type="text" id="titulo" name="titulo" required>
+
+ <label for="autor">Autor:</label>
+ <input type="text" id="autor" name="autor" required>
+
+ <button type="submit">Adicionar Livro</button>
+ </form>
+
+ <h2>Lista de Livros</h2>
+ <ul id="listaLivros">
+ <!-- Lista de livros será exibida aqui -->
+ </ul>
+
+ <form action="/remover" method="post">
+ <label for="indice">Índice do Livro a Remover:</label>
+ <input type="number" id="indice" name="indice" min="1" required>
+
+ <button type="submit">Remover Livro</button>
+ </form>
+
+ <script>
+ // Atualiza a lista de livros ao carregar a página
+ window.onload = () => {
+ const listaLivros = document.getElementById('listaLivros');
+
+ fetch('/listar')
+ .then(response => response.json())
+ .then(data => {
+ data.forEach((livro, index) => {
+ const item = document.createElement('li');
+ item.textContent = `${index + 1}. ${livro.titulo} - ${livro.autor}`;
+ listaLivros.appendChild(item);
+ });
+ });
+ };
+ </script>
+</body>
+</html>
