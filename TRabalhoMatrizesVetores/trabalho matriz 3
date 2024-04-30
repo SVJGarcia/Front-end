@@ -1,0 +1,18 @@
+# Função para preencher a matriz 4x4 com o produto da linha e coluna de cada elemento
+def preencher_matriz():
+    matriz = [[0]*4 for _ in range(4)]  # Criando uma matriz 4x4 inicializada com zeros
+    
+    for i in range(4):
+        for j in range(4):
+            matriz[i][j] = (i+1) * (j+1)  # Preenchendo cada elemento com o produto da linha e coluna
+    
+    return matriz
+
+# Função para imprimir a matriz na tela
+def imprimir_matriz(matriz):
+    for linha in matriz:
+        print(linha)
+
+# Chamando as funções para criar e imprimir a matriz
+matriz = preencher_matriz()
+imprimir_matriz(matriz)

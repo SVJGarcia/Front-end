@@ -1,0 +1,35 @@
+# Função para ler uma matriz 4x4
+def ler_matriz():
+    matriz = []
+    print("Digite os elementos da matriz 4x4:")
+    for i in range(4):
+        linha = list(map(int, input().split()))
+        matriz.append(linha)
+    return matriz
+
+# Função para imprimir a matriz na tela
+def imprimir_matriz(matriz):
+    print("Matriz 4x4:")
+    for linha in matriz:
+        print(linha)
+
+# Função para encontrar a localização do maior valor na matriz
+def localizar_maior(matriz):
+    maior_valor = matriz[0][0]
+    linha_maior = 0
+    coluna_maior = 0
+    
+    for i in range(4):
+        for j in range(4):
+            if matriz[i][j] > maior_valor:
+                maior_valor = matriz[i][j]
+                linha_maior = i
+                coluna_maior = j
+                
+    return linha_maior, coluna_maior
+
+# Chamando as funções para ler a matriz, imprimir e encontrar o maior valor
+matriz = ler_matriz()
+imprimir_matriz(matriz)
+linha_maior, coluna_maior = localizar_maior(matriz)
+print("O maior valor está na linha", linha_maior+1, "e na coluna", coluna_maior+1)

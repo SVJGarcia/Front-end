@@ -1,0 +1,33 @@
+# Função para ler uma matriz 4x4
+def ler_matriz():
+    matriz = []
+    print("Digite os elementos da matriz 4x4:")
+    for i in range(4):
+        linha = list(map(int, input().split()))
+        matriz.append(linha)
+    return matriz
+
+# Função para criar uma terceira matriz com os maiores valores de cada posição
+def encontrar_maiores(matriz1, matriz2):
+    matriz_maiores = []
+    for i in range(4):
+        linha = []
+        for j in range(4):
+            maior_valor = max(matriz1[i][j], matriz2[i][j])
+            linha.append(maior_valor)
+        matriz_maiores.append(linha)
+    return matriz_maiores
+
+# Função para imprimir uma matriz
+def imprimir_matriz(matriz):
+    for linha in matriz:
+        print(linha)
+
+# Chamando as funções para ler as duas matrizes, encontrar os maiores valores e imprimir a matriz resultante
+print("Matriz 1:")
+matriz1 = ler_matriz()
+print("\nMatriz 2:")
+matriz2 = ler_matriz()
+matriz_maiores = encontrar_maiores(matriz1, matriz2)
+print("\nMatriz com os maiores valores de cada posição:")
+imprimir_matriz(matriz_maiores)

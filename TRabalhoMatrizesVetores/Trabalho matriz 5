@@ -1,0 +1,30 @@
+# Função para ler uma matriz 5x5
+def ler_matriz():
+    matriz = []
+    print("Digite os elementos da matriz 5x5:")
+    for i in range(5):
+        linha = list(map(int, input().split()))
+        matriz.append(linha)
+    return matriz
+
+# Função para buscar um valor na matriz
+def buscar_valor(matriz, valor):
+    for i in range(5):
+        for j in range(5):
+            if matriz[i][j] == valor:
+                return i, j
+    return None  # Retorna None se o valor não for encontrado na matriz
+
+# Função para imprimir a localização do valor ou uma mensagem de não encontrado
+def imprimir_localizacao(localizacao):
+    if localizacao:
+        linha, coluna = localizacao
+        print("O valor foi encontrado na linha", linha+1, "e na coluna", coluna+1)
+    else:
+        print("O valor não foi encontrado na matriz.")
+
+# Chamando as funções para ler a matriz, buscar o valor e imprimir a localização
+matriz = ler_matriz()
+valor = int(input("Digite o valor a ser buscado na matriz: "))
+localizacao = buscar_valor(matriz, valor)
+imprimir_localizacao(localizacao)

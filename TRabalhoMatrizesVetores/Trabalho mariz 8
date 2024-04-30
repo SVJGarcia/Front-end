@@ -1,0 +1,22 @@
+# Função para ler uma matriz 3x3
+def ler_matriz():
+    matriz = []
+    print("Digite os elementos da matriz 3x3:")
+    for i in range(3):
+        linha = list(map(int, input().split()))
+        matriz.append(linha)
+    return matriz
+
+# Função para calcular a soma dos elementos acima da diagonal principal
+def soma_acima_diagonal_principal(matriz):
+    soma = 0
+    for i in range(3):
+        for j in range(3):
+            if i < j:  # Verifica se o elemento está acima da diagonal principal
+                soma += matriz[i][j]
+    return soma
+
+# Chamando as funções para ler a matriz e calcular a soma
+matriz = ler_matriz()
+soma = soma_acima_diagonal_principal(matriz)
+print("A soma dos elementos acima da diagonal principal é:", soma)
