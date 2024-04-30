@@ -1,0 +1,9 @@
+const pessoa = {
+  nome: "Maria",
+  idade: 25,
+  cidade: "Rio de Janeiro",
+  interesses: ["viajar", "ler", "praticar esportes"]
+};
+
+const jsonPessoa = JSON.stringify(pessoa);
+console.log(jsonPessoa);
