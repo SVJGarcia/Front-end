@@ -2,7 +2,7 @@
     width: 50vw; 
     height: 100vh; 
     background-color: rgb(35, 97, 6); 
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 45% 45% 0;
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -28,7 +28,7 @@
     cursor: pointer; 
     font-size: 100%; 
     font-family: Arial, sans-serif; 
-    border-radius: 10%;
+    border-radius: 0.5rem;
     position: absolute;
     top: 50%;
     margin-left: 2%;
@@ -42,7 +42,7 @@
     cursor: pointer; 
     font-size: 100%; 
     font-family: Arial, sans-serif; 
-    border-radius: 10%;
+    border-radius: 0.5rem;
     position: absolute;
     top: 60%;
     margin-left: 2%;
