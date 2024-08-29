@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/recuperar-senha.css">
+</head>
+<body>
+    <section class="form">
+        <h1>Recuperação de senha</h1>
+        <h3>Informe um E-mail para Recuperação</h3>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputEmail" placeholder="Digite aqui seu E-mail" required>
+            <label for="floatingInputEmail"></label>
+        </div>
+        <button type="button" class="btn-enviar" onclick="showCodeField()">Enviar código</button>
+
+         <div id="code-field" class="form-floating mb-3" style="display: none;">
+            <input type="text" class="form-control" id="floatingInputCode" placeholder="Digite o código recebido" required>
+            <label for="floatingInputCode">Código</label>
+        </div>
+        <div>
+            <button type="submit" id="submit-code" class="btn-enviar" style="display: none;">Confirmar Código</button>
+        </div>
+    </section>
+</body>
+</html>
